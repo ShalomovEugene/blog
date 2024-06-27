@@ -1,0 +1,65 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+
+  @layer utilities {
+
+    .flex-center {
+      @apply flex justify-center items-center;
+    }
+
+    .success-toast {
+      @apply bg-green-100 text-green-900;
+    }
+
+    .error-toast {
+      @apply bg-red-100 text-red-900;
+    }
+    .media-uploader_cldImage {
+      @apply h-fit min-h-72 w-full rounded-lg border border-dashed bg-blue-100/20 object-cover p-2;
+    }
+
+    .media-uploader_cta {
+      @apply flex-center flex h-72 cursor-pointer flex-col gap-5 rounded-lg border border-blue-300 border-dashed bg-blue-200/20 shadow-inner;
+    }
+
+    .media-uploader_cta-image {
+      @apply rounded-lg bg-white p-5 shadow-sm shadow-blue-200/50;
+    }
+
+    .input-field {
+      @apply rounded-lg border-2 border-blue-500/20 shadow-sm shadow-blue-200/15 disabled:opacity-100 h-[50px] md:h-[54px] focus-visible:ring-offset-0 px-4 py-3 focus-visible:ring-transparent !important;
+    }
+
+    .textarea-field {
+      @apply rounded-lg border-2 border-blue-500/20 shadow-sm shadow-blue-200/15 disabled:opacity-100 focus-visible:ring-offset-0 px-4 py-3 focus-visible:ring-transparent !important;
+    }
+
+  }
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+
+  --radius: 0.5rem;
+}
